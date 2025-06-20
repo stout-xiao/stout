@@ -13,7 +13,7 @@ const ACCESS_PASSWORD = 'su-xin-2025';  // 你设定的访问密码（自己改�
 export default function Home() {
   const [authorized, setAuthorized] = useState(false);
   const [password, setPassword] = useState('');
-  const [messages, setMessages] = useState<Message[]>([]);
+  const [messages, setMessages] = useState<any[]>([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const chatContainerRef = useRef<HTMLDivElement>(null);
